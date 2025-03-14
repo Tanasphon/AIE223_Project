@@ -1,0 +1,7 @@
+Flask==2.3.3
+roboflow==1.1.9
+opencv-python==4.8.0.76
+numpy==1.24.3
+ultralytics==8.0.145
+matplotlib==3.7.2
+PyYAML==6.0.1 

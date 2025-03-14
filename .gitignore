@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# Uploads folder content (ignore uploaded images)
+uploads/*
+!uploads/.gitkeep
+
+# Flask
+instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Model weights backup (these can be very large)
+*.pt.backup 

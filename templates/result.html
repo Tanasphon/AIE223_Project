@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .result-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .result-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detection Results</h1>
+    
+    <div class="result-container">
+        <h2>Results for "{{ filename }}"</h2>
+        
+        <div class="info">
+            <p>The image shows detected objects with their class labels and confidence scores.</p>
+            <p>Each object is highlighted with a bounding box colored according to its class.</p>
+        </div>
+        
+        <img src="data:image/png;base64,{{ img_data }}" alt="Detection Results" class="result-image">
+        
+        <a href="/" class="back-btn">Process Another Image</a>
+    </div>
+</body>
+</html> 
